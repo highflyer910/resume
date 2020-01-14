@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css?family=Khula|Telex|Yantramanav");
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.rightColumn .jobTitle, .rightColumn .degreeTitle, .rightColumn .osTitle, .leftColumn .companyName, .leftColumn .schoolName, .leftColumn .projectName, .leftColumn .openName, .header .contactName, .sectionHeader {
+  font-weight: 600;
+  font-family: "Yantramanav", sans-serif;
+  font-size: 1em;
+  color: #5a5757;
+  text-transform: capitalize;
+}
+
+.rightColumn .jobDescription, .rightColumn .projectDescription, .rightColumn .degreeDescription, .rightColumn .opensourceDescription, .leftColumn .dateRange, .header .contactDetails a, .description {
+  font-weight: 500;
+  font-family: "Khula", sans-serif;
+  font-size: 1em;
+  color: #737373;
+}
+
+.sectionHeader {
+  border-bottom: 1px solid;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #004d5e;
+  margin-bottom: -5px;
+}
+
+.accent {
+  font-weight: 600;
+  font-style: italic;
+  color: #5a5757;
+}
+
+/*
+  Body styles
+*/
+.header {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004d5e;
+}
+.header .contactName {
+  font-size: 3em;
+  color: white;
+}
+.header .contactDetails {
+  list-style-type: none;
+  text-align: right;
+}
+.header .contactDetails a {
+  text-decoration: none;
+  color: white;
+}
+
+.resumeBody {
+  padding: 20px;
+  display: grid;
+  grid-column: 1;
+  grid-auto-rows: auto;
+  grid-gap: 2em;
+}
+
+/*
+  Section styles
+*/
+.twoColumnSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.twoColumnSection > .leftColumn {
+  flex-basis: 200px;
+  flex-grow: 9999;
+  margin: 0 1em 1em 0;
+}
+.twoColumnSection > .leftColumn .opensourceSection {
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-gap: 0.5em;
+}
+.twoColumnSection > .leftColumn .opensourceSection .opensourceItem {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  grid-template-areas: "title description";
+  grid-gap: 1em;
+}
+.twoColumnSection > .rightColumn {
+  flex-basis: 100px;
+  flex-grow: 1;
+  min-width: 300px;
+}
+.twoColumnSection > .rightColumn .educationSection {
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-gap: 0.5em;
+  margin-bottom: 1em;
+}
+.twoColumnSection > .rightColumn .educationSection .educationItem {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  grid-template-areas: "title description";
+  grid-gap: 1em;
+}
+.twoColumnSection > .rightColumn .skillsSection {
+  grid-auto-rows: min-content;
+  display: grid;
+  grid-gap: 0.5em;
+}
+
+.experienceSection, .projectsSection {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-gap: 1em;
+}
+
+.experienceItem, .projectItem {
+  display: grid;
+  grid-template-columns: minmax(auto, 135px) 1fr;
+  grid-template-areas: "title description";
+  grid-gap: 1em;
+}
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+}
+.leftColumn .dateRange {
+  text-transform: uppercase;
+  font-size: 0.85em;
+}
+
+.rightColumn {
+  grid-area: description;
+  display: flex;
+  flex-direction: column;
+}
+.rightColumn > ul {
+  margin: 0;
+  padding-left: 1.2em;
+  list-style-type: square;
+}
+.rightColumn > .jobTitle ~ .jobTitle {
+  margin-top: 15px;
+}
+@media print {
+  .description {
+    font-size: 12px;
+  }
+
+  .header .contactDetails a {
+    font-size: 14px;
+  }
+
+  .twoColumnSection {
+    grid-template-columns: 1fr minmax(auto, 350px);
+  }
+  .twoColumnSection .educationSection .educationItem {
+    grid-template-columns: minmax(auto, 180px) 1fr;
+  }
+
+  .leftColumn .companyName, .leftColumn .schoolName, .leftColumn .projectName, .leftColumn .openName {
+    font-size: 14px;
+  }
+  .leftColumn .dateRange {
+    font-size: 12px;
+  }
+
+  .rightColumn .jobTitle, .rightColumn .degreeTitle, .rightColumn .osTitle {
+    font-size: 14px;
+  }
+  .rightColumn .jobDescription, .rightColumn .projectDescription, .rightColumn .degreeDescription, .rightColumn .opensourceDescription {
+    font-size: 12px;
+  }
+}
