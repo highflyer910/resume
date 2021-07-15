@@ -24,7 +24,7 @@ body {
   font-size: 1em;
   text-transform: uppercase;
   color: #004d5e;
-  margin-bottom: -5px;
+  margin-bottom: -7px;
 }
 
 .accent {
@@ -57,14 +57,13 @@ body {
   color: white;
 }
 
+.header .contactDetails a i{
+  margin-right: 8px;
+}
+
 .projectItem .projectName a{
   text-decoration: underline;
   color: #5a5757
-
-}
-
-.header .contactDetails a i{
-  margin-right: 8px;
 }
 
 .resumeBody {
@@ -72,7 +71,7 @@ body {
   display: grid;
   grid-column: 1;
   grid-auto-rows: auto;
-  grid-gap: 2em;
+  grid-gap: 1em;
 }
 
 /*
@@ -92,14 +91,14 @@ body {
 .twoColumnSection > .leftColumn .opensourceSection {
   display: grid;
   grid-auto-rows: min-content;
-  grid-gap: 0.5em;
+  grid-gap: 1em;
 }
 
 .twoColumnSection > .leftColumn .opensourceSection .opensourceItem {
   display: grid;
   grid-template-columns: 180px 1fr;
   grid-template-areas: "title description";
-  grid-gap: 1em;
+  grid-gap: .5em;
 }
 
 .twoColumnSection > .rightColumn {
@@ -110,19 +109,19 @@ body {
 .twoColumnSection > .rightColumn .educationSection {
   display: grid;
   grid-auto-rows: min-content;
-  grid-gap: 0.5em;
-  margin-bottom: 1em;
+  grid-gap: 1em;
+  margin-bottom: 0.5em;
 }
 .twoColumnSection > .rightColumn .educationSection .educationItem {
   display: grid;
   grid-template-columns: 170px 1fr;
   grid-template-areas: "title description";
-  grid-gap: 1em;
+  grid-gap: .5em;
 }
 .twoColumnSection > .rightColumn .skillsSection {
   grid-auto-rows: min-content;
   display: grid;
-  grid-gap: 0.5em;
+  grid-gap: 1em;
 }
 
 .rightColumn .skillsSection .description{
@@ -142,7 +141,7 @@ body {
   display: grid;
   grid-template-columns: minmax(auto, 135px) 1fr;
   grid-template-areas: "title description";
-  grid-gap: 1em;
+  grid-gap: .5em;
 }
 
 .leftColumn {
