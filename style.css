@@ -45,8 +45,9 @@ body {
   background-color: #004d5e;
 }
 .header .contactName {
-  font-size: 3em;
+  font-size: 3rem;
   color: white;
+  letter-spacing: 1px;
 }
 .header .contactDetails {
   list-style-type: none;
@@ -125,11 +126,17 @@ body {
 }
 
 .rightColumn .skillsSection .description{
-   column-count: 3;
-   column-gap: 10px;
-   column-fill: auto;
-   list-style-type: square;
+  column-count: 3;
+  column-gap: 10px;
+  column-fill: auto;
+  list-style-type: square;
 }
+
+.description{
+  line-height: 1.2em;
+}
+
+
 
 .experienceSection, .projectsSection {
   display: grid;
@@ -167,7 +174,7 @@ body {
   margin-top: 15px;
 }
 @media print {
-  .description {
+  .description{
     font-size: 12px;
   }
 
