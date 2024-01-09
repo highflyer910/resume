@@ -28,7 +28,6 @@ body {
 }
 
 .accent {
-  font-weight: 600;
   font-style: italic;
   color: #5a5757;
 }
@@ -74,6 +73,8 @@ body {
   grid-auto-rows: auto;
   grid-gap: 1em;
 }
+
+
 
 /*
   Section styles
@@ -125,7 +126,7 @@ body {
   grid-gap: 1em;
 }
 
-.rightColumn .skillsSection .description{
+.rightColumn .skillsSection{
   column-count: 3;
   column-gap: 10px;
   column-fill: auto;
@@ -134,6 +135,13 @@ body {
 
 .description{
   line-height: 1.2em;
+  list-style-type: square;
+}
+
+.skillsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
 }
 
 
@@ -173,6 +181,7 @@ body {
 .rightColumn > .jobTitle ~ .jobTitle {
   margin-top: 15px;
 }
+
 @media print {
   .description{
     font-size: 12px;
