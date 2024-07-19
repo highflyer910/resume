@@ -7,7 +7,7 @@ body {
 .rightColumn .jobTitle, .rightColumn .degreeTitle, .rightColumn .osTitle, .leftColumn .companyName, .leftColumn .schoolName, .leftColumn .projectName, .leftColumn .openName, .header .contactName, .sectionHeader {
   font-weight: 600;
   font-family: "Yantramanav", sans-serif;
-  font-size: 1em;
+  font-size: 0.9em;
   color: #5a5757;
   text-transform: capitalize;
 }
@@ -15,13 +15,13 @@ body {
 .rightColumn .jobDescription, .rightColumn .projectDescription, .rightColumn .degreeDescription, .rightColumn .opensourceDescription, .leftColumn .dateRange, .header .contactDetails a, .description {
   font-weight: 400;
   font-family: "Khula", sans-serif;
-  font-size: 1em;
+  font-size: 0.9em;
   color: #737373;
 }
 
 .sectionHeader {
   border-bottom: 1px solid;
-  font-size: 1em;
+  font-size: 0.9em;
   text-transform: uppercase;
   color: #004d5e;
   margin-bottom: -7px;
@@ -138,9 +138,13 @@ body {
   list-style-type: square;
 }
 
+.description li{
+  margin-bottom: 1rem;
+}
+
 .skillsContainer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 1em;
 }
 
